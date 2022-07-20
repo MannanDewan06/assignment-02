@@ -11,8 +11,8 @@ body {
 }
 .banner {
   display: flex;
-  width: 1321px;
-  height: 646px;
+  width: 100%;
+  height: 100%;
   background-color: #161616;
   border-radius: 30px;
   align-items: center;
@@ -85,7 +85,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 312px;
-  /* height: 175px; */
 }
 .blog > img {
   width: 100%;
@@ -99,9 +98,8 @@ body {
   gap: 24px;
 }
 .transfer-botton {
-  padding: 3px 5px;
+  padding: 5px 15px;
   width: 100px;
-  height: 32px;
   border: 1px solid black;
   border-radius: 5px;
   text-align: center;
@@ -169,4 +167,79 @@ hr {
   justify-content: space-evenly;
   margin: 0 351px;
   padding: 5px 0 0 5px;
+}
+/* responsive for mobile */
+@media only screen and (max-width: 688px) {
+  .banner-container {
+    margin: 0 20px 24px;
+  }
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner-text {
+    text-align: center;
+    padding: 28px 38px 21px;
+  }
+  .banner-text h1 {
+    font-size: 22px;
+  }
+  .banner-text p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .button {
+    padding: 8px 12px;
+  }
+  .banner-img {
+    width: 233px;
+    height: 245px;
+    padding: 0 38px 24px 63px;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .navigation {
+    background-color: blanchedalmond;
+    margin: 0 83px 24px;
+    width: 210px;
+    height: 176px;
+  }
+  .nav-element {
+    border: 1 px solid gray;
+  }
+  .blog {
+    width: 335px;
+    height: 388.69px;
+    margin: 0 20px;
+  }
+  .blog-content {
+    margin: 0 40px;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+  }
+  footer h2 {
+    padding: 24x 161px;
+    font-size: 22px;
+  }
+  hr {
+    width: 335px;
+    margin-bottom: 24px;
+  }
+  .author-info {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 0;
+  }
+  .social-media {
+    font-size: 30px;
+  }
+  .link {
+    margin: 0;
+  }
 }
